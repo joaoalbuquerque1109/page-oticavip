@@ -1,59 +1,294 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="top">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ótica VIP</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ótica VIP</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Ótica VIP</h1>
-            <nav>
-                <ul>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Ótica VIP">
+        Ótica <span>VIP</span>
+      </a>
 
-    <section id="banner">
-        <div class="container">
-            <h1><n>Onde você é a nossa prioridade!</n></h1>
-            <h2>Veja o Mundo com Estilo</h2>
-            <p>Óculos de alta qualidade para todos os estilos.</p>
-            <a href="#produtos" class="btn">Confira nossos produtos</a>
+      <nav class="nav" aria-label="Navegação">
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#promocao">Promoção</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary header__cta" href="#contato">Chamar no WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero__right-bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Encontre o Óculos<br/>Perfeito para Você!</h1>
+          <p class="hero__sub">
+            Estilo e conforto com exames, ajuste e garantia
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contato">✅ Chamar no WhatsApp</a>
+            <a class="btn btn--soft" href="#destaques">Ver Modelos</a>
+          </div>
         </div>
+
+        <div class="hero__imgWrap">
+          <!-- Use uma imagem sua (se quiser trocar, altere aqui) -->
+          <img class="hero__img" src="VIP/oculos/card-1.jpeg" alt="Ótica VIP" loading="eager" />
+        </div>
+      </div>
+
+      <!-- Faixa de benefícios -->
+      <div class="container">
+        <div class="benefits">
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🧾</div>
+            <div class="benefit__txt">
+              <h3>Exame de Visão</h3>
+              <p>Agende e tenha clareza e conforto.</p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🛠️</div>
+            <div class="benefit__txt">
+              <h3>Ajuste Personalizado</h3>
+              <p>Conforto ideal no seu rosto.</p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="benefit__icon" aria-hidden="true">🛡️</div>
+            <div class="benefit__txt">
+              <h3>Garantia de Qualidade</h3>
+              <p>Mais segurança na sua compra.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="produtos" class="container">
-        <h2>Nossos Produtos</h2>
-        <div class="product-card">
+    <!-- CATEGORIAS -->
+    <section id="categorias" class="section">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>Nossos Óculos</h2>
+          <p>Categorias de ajuste, tendências e necessidades</p>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="catCard">
+            <div class="catCard__img">
+              <img src="VIP/oculos/escurp.jpg" alt="Óculos de Sol" loading="lazy" />
+            </div>
             <h3>Óculos de Sol</h3>
-            <p>Proteção e estilo para seus olhos.</p>
+          </article>
+
+          <article class="catCard">
+            <div class="catCard__img">
+              <img src="VIP/oculos/moderno.png" alt="Óculos Femininos" loading="lazy" />
+            </div>
+            <h3>Óculos Femininos</h3>
+          </article>
+
+          <article class="catCard">
+            <div class="catCard__img">
+              <img src="VIP/oculos/classico.png" alt="Óculos Masculinos" loading="lazy" />
+            </div>
+            <h3>Óculos Masculinos</h3>
+          </article>
+
+          <article class="catCard">
+            <div class="catCard__img">
+              <img src="VIP/oculos/esportivo.png" alt="Óculos Esportivos" loading="lazy" />
+            </div>
+            <h3>Óculos Esportivos</h3>
+          </article>
         </div>
-        <div class="product-card">
-            <h3>Óculos de Grau</h3>
-            <p>Visão clara e conforto o dia todo.</p>
-        </div>
-        <div class="product-card">
-            <h3>Óculos Infantis</h3>
-            <p>Modelos divertidos e seguros para crianças.</p>
-        </div>
+      </div>
     </section>
 
-    <section id="sobre" class="container">
-        <h2>Sobre Nós</h2>
-        <p>Na Ótica Azul & Dourada, oferecemos o que há de melhor em óculos, com atendimento especializado e preços justos.</p>
+    <!-- DESTAQUES -->
+    <section id="destaques" class="section section--soft">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>Destaques</h2>
+          <p>Opções em alta com bom custo-benefício</p>
+        </div>
+
+        <div class="grid grid--4">
+          <article class="prodCard">
+            <img class="prodCard__img" src="VIP/oculos/teste3.png" alt="Óculos Moderno" loading="lazy" />
+            <div class="prodCard__body">
+              <h3>Óculos Moderno</h3>
+              <p class="price">A partir. <strong>R$ 69</strong></p>
+              <p class="small">Conforto e estilo para o dia a dia.</p>
+              <a class="btn btn--primary btn--sm" href="#contato">Ver Detalhes</a>
+            </div>
+          </article>
+
+          <article class="prodCard">
+            <img class="prodCard__img" src="VIP/oculos/armacao1.png" alt="Óculos Elegante" loading="lazy" />
+            <div class="prodCard__body">
+              <h3>Óculos Elegante</h3>
+              <p class="price">A partir. <strong>R$ 69</strong></p>
+              <p class="small">Acabamento premium e leveza.</p>
+              <a class="btn btn--primary btn--sm" href="#contato">Ver Detalhes</a>
+            </div>
+          </article>
+
+          <article class="prodCard">
+            <img class="prodCard__img" src="VIP/oculos/armacao2.png" alt="Óculos Clássico" loading="lazy" />
+            <div class="prodCard__body">
+              <h3>Óculos Clássico</h3>
+              <p class="price">A partir. <strong>R$ 69</strong></p>
+              <p class="small">Design atemporal e elegante.</p>
+              <a class="btn btn--primary btn--sm" href="#contato">Ver Detalhes</a>
+            </div>
+          </article>
+
+          <article class="prodCard">
+            <img class="prodCard__img" src="VIP/oculos/armacao4.png" alt="Óculos Redondo" loading="lazy" />
+            <div class="prodCard__body">
+              <h3>Óculos Redondo</h3>
+              <p class="price">A partir. <strong>R$ 69</strong></p>
+              <p class="small">Ideal para um visual moderno.</p>
+              <a class="btn btn--primary btn--sm" href="#contato">Ver Detalhes</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="dots" aria-label="Indicadores">
+          <span class="dot dot--active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Ótica Azul & Dourada. Todos os direitos reservados.</p>
+    <!-- PROMOÇÃO -->
+    <section id="promocao" class="section">
+      <div class="container promo">
+        <div class="promo__img">
+          <img src="VIP/oculos/promocao.png" alt="Promoção da Semana" loading="lazy" />
         </div>
-    </footer>
+
+        <div class="promo__copy">
+          <p class="pill">Promoção da Semana</p>
+          <h2>Óculos de Sol com <span class="gold">25%</span> de Desconto</h2>
+          <p class="muted">
+            Aproveite nossa oferta especial de óculos de sol nesta semana, com descontos
+            imperdíveis nos modelos mais estilosos!
+          </p>
+          <a class="btn btn--gold" href="#contato">Aproveitar Desconto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS (sem foto) -->
+    <section id="depoimentos" class="section section--soft">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2>Depoimentos de Clientes</h2>
+          <p>O que falam sobre atendimento, ajuste e qualidade</p>
+        </div>
+
+        <div class="twrap">
+          <button class="tbtn" id="tPrev" aria-label="Depoimento anterior">‹</button>
+
+          <div class="ttrack" id="tTrack">
+            <article class="tcard">
+              <div class="tstars" aria-label="5 estrelas">★★★★★</div>
+              <h3>Clara Mendes</h3>
+              <p>
+                Atendimento super rápido e ajuste perfeito. Qualidade acima do esperado e preço justo.
+              </p>
+            </article>
+
+            <article class="tcard">
+              <div class="tstars" aria-label="5 estrelas">★★★★★</div>
+              <h3>Pedro Silva</h3>
+              <p>
+                Comprei pelo WhatsApp e fui muito bem atendido. Óculos confortável e acabamento top.
+              </p>
+            </article>
+
+            <article class="tcard">
+              <div class="tstars" aria-label="5 estrelas">★★★★★</div>
+              <h3>Isabela Ramos</h3>
+              <p>
+                Variedade excelente e suporte muito bom. Recomendo demais para quem quer qualidade.
+              </p>
+            </article>
+          </div>
+
+          <button class="tbtn" id="tNext" aria-label="Próximo depoimento">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contact">
+        <div class="contact__copy">
+          <h2>Contato</h2>
+          <p class="muted">Peça modelos, preços e disponibilidade. Resposta rápida pelo WhatsApp.</p>
+
+          <ul class="clist">
+            <li><strong>WhatsApp:</strong> <span id="waShow">(xx) xxxxx-xxxx</span></li>
+            <li><strong>Email:</strong> <a href="mailto:contato@oticavip.com.br">contato@oticavip.com.br</a></li>
+            <li><strong>Instagram:</strong> <a href="#" rel="noopener">@oticavip</a></li>
+          </ul>
+
+          <a class="btn btn--primary" id="waBtn" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+
+        <form class="form" id="contactForm">
+          <label>
+            <span>Nome</span>
+            <input id="nome" type="text" placeholder="Seu nome" autocomplete="name" />
+          </label>
+
+          <label>
+            <span>Mensagem</span>
+            <textarea id="mensagem" rows="5" placeholder="Ex: Quero ver modelos de óculos de sol"></textarea>
+          </label>
+
+          <button class="btn btn--gold" type="submit">Enviar pelo WhatsApp</button>
+          <p class="hint">* Abre o WhatsApp com a mensagem pronta.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2026 Ótica VIP. Todos os direitos reservados.</p>
+      <a href="#top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
